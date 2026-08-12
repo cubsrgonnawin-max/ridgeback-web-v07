@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ridgeback OS — Ridgeback Global Infrastructure</title>
+<meta name="description" content="Ridgeback OS is a compliance-first infrastructure delivery platform in development at Ridgeback Global Infrastructure, turning procurement language into tracked obligations, evidence, and human review gates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="mark">R</span>
+      RIDGEBACK GLOBAL
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html">Company</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="projects.html">Projects</a>
+      <a href="ridgeback-os.html">Ridgeback OS</a>
+      <a href="capabilities.html#schedule" class="btn btn-outline">Schedule a Call</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Company</a> / Ridgeback OS</div>
+    <span class="badge badge-dev" style="margin-bottom:14px;">In Development</span>
+    <h1>Ridgeback OS</h1>
+    <p class="lede">A compliance-first infrastructure delivery platform that turns federal, state, local, and Tribal procurement language into tracked obligations, required evidence, and human-reviewed approval gates.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">The Problem</span>
+      <h2>Compliance fails in the gaps, not the engineering</h2>
+      <p>Public infrastructure programs rarely fail because a calculation was wrong. They fail because an obligation buried in clause language was never tracked, the evidence proving it was satisfied was never centralized, and no one could reconstruct the decision trail when an auditor asked. Ridgeback OS is built to close that gap structurally rather than procedurally.</p>
+    </div>
+
+    <div class="callout">
+      <p><strong>Development status.</strong> Ridgeback OS is in active development and is not yet generally available. The components below describe the designed architecture. Nothing on this page should be read as a claim of a shipped, production-deployed product.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Architecture</span>
+      <h2>How it is designed to work</h2>
+      <p>A linear pipeline, deliberately. Nothing skips a step.</p>
+    </div>
+
+    <div class="os-flow">
+      <span class="os-step">Solicitation / Contract</span>
+      <span class="os-arrow">→</span>
+      <span class="os-step">Clause Detection</span>
+      <span class="os-arrow">→</span>
+      <span class="os-step">Obligation Compiler</span>
+      <span class="os-arrow">→</span>
+      <span class="os-step">Jurisdiction Resolver</span>
+      <span class="os-arrow">→</span>
+      <span class="os-step">Evidence Vault</span>
+      <span class="os-arrow">→</span>
+      <span class="os-step">Human Review Gate</span>
+      <span class="os-arrow">→</span>
+      <span class="os-step">Compliant Deliverable</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Core Components</span>
+      <h2>Designed capabilities</h2>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Regulatory Source Registry</h3>
+        <p>A version-controlled library of the federal, state, local, and Tribal regulations governing a given project, so every obligation traces back to a real, citable source.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Clause Detection Engine</h3>
+        <p>Scans solicitation and contract documents to identify compliance-relevant clauses rather than relying on manual read-throughs.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Clause-to-Obligation Compiler</h3>
+        <p>Converts detected clauses into discrete, trackable obligations with assigned owners, deadlines, and required evidence.</p>
+      </div>
+      <div class="card">
+        <div class="num">04</div>
+        <h3>Jurisdiction Resolver</h3>
+        <p>Determines which federal, state, local, or Tribal rules apply to a given task, and flags overlapping or conflicting requirements instead of silently picking one.</p>
+      </div>
+      <div class="card">
+        <div class="num">05</div>
+        <h3>Evidence Vault</h3>
+        <p>Centralized, auditable storage for every document and artifact tied to a compliance obligation — one place an auditor can be pointed to.</p>
+      </div>
+      <div class="card">
+        <div class="num">06</div>
+        <h3>Human Review Gate</h3>
+        <p>Every automated output requires human sign-off before it counts as complete. There are no fully autonomous compliance decisions by design.</p>
+      </div>
+      <div class="card">
+        <div class="num">07</div>
+        <h3>Good-Faith Effort Engine</h3>
+        <p>Tracks and documents good-faith effort activity — outreach, sourcing, subcontracting attempts — in the form regulators expect to receive it.</p>
+      </div>
+      <div class="card">
+        <div class="num">08</div>
+        <h3>Subcontracting Plan Overlay</h3>
+        <p>Applies program-specific subcontracting plan requirements on top of the base compliance model for defense and federally funded work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Design Principles</span>
+      <h2>Non-negotiables</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Fail-closed</h3>
+        <p>When the system is uncertain, it stops and asks. It does not proceed on an assumption.</p>
+      </div>
+      <div class="card">
+        <h3>Human-gated</h3>
+        <p>No compliance determination is finalized without a person signing off on it.</p>
+      </div>
+      <div class="card">
+        <h3>Auditable by default</h3>
+        <p>Every obligation, decision, and artifact carries a traceable record — built in, not bolted on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <h3>Full Ridgeback OS detail lives at ridgebackinfra.com</h3>
+      <p>The dedicated Ridgeback OS site carries the deeper technical breakdown, and will host the product demonstration as it becomes available.</p>
+      <a href="https://www.ridgebackinfra.com" class="btn btn-accent">Visit ridgebackinfra.com →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a href="index.html" class="brand" style="margin-bottom:10px;">
+        <span class="mark">R</span> RIDGEBACK GLOBAL
+      </a>
+      <p style="max-width:340px; font-size:13.5px;">Ridgeback Global Infrastructure LLC — Norristown, PA.<br>Civil engineering delivery and the company building Ridgeback OS.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Company</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="projects.html">Projects</a>
+      <a href="ridgeback-os.html">Ridgeback OS</a>
+      <a href="https://www.ridgebackinfra.com">ridgebackinfra.com</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Ridgeback Global Infrastructure LLC. All rights reserved.</span>
+    <span>admin@ridgebackinfra.com</span>
+  </div>
+</footer>
+
+</body>
+</html>
